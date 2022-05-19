@@ -1,0 +1,12 @@
+1. khởi tạo packed : npm init
+2. Cài dotenv để sử dụng biến môi trường ở file .env
+3. Cài thư viện express 
+4. Cài thư viện mongoose 
+5. Cài thư viện nodemon
+6. Vào file json : "server": "nodemon server.js"
+7. Setup file server
+8. Setup file .env 
+9. kết nối mongoose
+10. CRUD : + POST  + GET 
+-> Tạo models
+-> Tạo routers

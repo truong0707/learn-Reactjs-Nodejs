@@ -1,0 +1,13 @@
+1 .Cài tool: redux dev tool
+2. Cài packed : 1. npm add redux ,  2. npm i react-redux 
+3. Tạo kho redux: 
+--> Tạo folder: redux
+---> tạo store.js
+--> 
+ import { createStore } from 'redux';
+
+ const store = createStore(rootReducer, initValue, enhancers); 
+ export default store;
+
+ ---> tạo file reducer.js :
+ 

@@ -1,0 +1,5 @@
+@media only print {
+    h1 {
+        color: aqua;
+    }
+}

@@ -1,0 +1,29 @@
+/* ex1 */
+.block{
+    width: 100px;
+    height: 100px;
+    background: rgb(245, 141, 141);
+}
+
+.block{
+    width: calc(100px * 3);   /* tính toán độ dài */
+    height: 100px;
+}
+
+/* ex2 */
+a::after {
+    content: "(" attr(href)")";
+}
+
+/* ex2 */
+.boxs {
+    width: 50px;
+    height: 50px;
+    background: rgb(245, 183, 183);
+}
+.boxs::after { 
+    content: attr(data-title);
+
+}
+
+

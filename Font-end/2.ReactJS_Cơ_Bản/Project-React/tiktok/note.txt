@@ -1,0 +1,15 @@
+            HOOK
+1. Chỉ sử dụng cho function component
+2. Component đơn giản và trở nên dễ hiểu
+    + Không bị chia logic ra như methods trong lifecycle(vòng đời) của Class Component
+    + Không cần sử dụng  "this"
+3.Sử dụng HOOK khi nào?
+    + Dự án mới => Hooks
+    + Dự án cũ:
+        - Component mới => Function component + Hooks
+        - Component cũ => Giữ nguyên, có thời gian tối ưu sau
+    + logic nghiệp vụ cần sử dụng các tính chất của OOP => Class component
+4. Đều Có thể kết hợp class và Function 
+
+
+

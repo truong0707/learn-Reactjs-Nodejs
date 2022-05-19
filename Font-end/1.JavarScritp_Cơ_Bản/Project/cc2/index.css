@@ -1,0 +1,20 @@
+.options {
+  transform: translateY(-400px);
+  /* transform: translateX(400px); */
+
+}
+.active2 {
+  transform: translateY(50px);
+  transform: translateX(10px);
+    transition: 0.5s;  /*   tốc độ */
+}
+.active2:hover {
+  transform: translateX(100px);
+}
+
+/* https://thachpham.com/web-development/html-css/position-absolute-va-relative-trong-css.html */
+
+
+
+
+

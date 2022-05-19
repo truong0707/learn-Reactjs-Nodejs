@@ -1,0 +1,13 @@
+
+Nội dung phần này
+
+Sử dụng các kiến thức về useState
+Lưu ý:
+1. Array
+2. Reference types
+
+Các ví dụ:
+1. Random gift
+2. Two-way Binding
+3. TodoList
+

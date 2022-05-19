@@ -1,0 +1,5 @@
++ HTML là chữ viết tắt của Hypertext Markup Languge (là ngôn ngữ đánh dấu siêu văn bản), Nó giúp ta cấu trúc các thành phần 
+trang wed hoặc ứng dụng, phân chia các đoạn văn, heanding, links, blockquotes, vv..
+
++ Css - Cascading Style Sheet là ngôn ngữ tạo phong cách cho trang wed (màu sắc , kiểu dáng) 
+

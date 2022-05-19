@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+.arrow {
+    padding: 5px 15px;
+    background: pink;
+    width: 50px;
+    position: absolute;
+    top: 400px;
+    z-index: 100;
+    cursor: pointer;
+}
+.arrow-right{
+    right: 50px;
+}
+.arrow-left{
+    left: 50px;
+}
+.ccs {
+    background: pink;
+    width: 95%;
+    height: 300px;
+    cursor: pointer;
+}
+.cc {
+    background: darkcyan;
+    width: 80%;
+}
+.cc1 {
+    background: salmon;
+    margin: 0;
+}

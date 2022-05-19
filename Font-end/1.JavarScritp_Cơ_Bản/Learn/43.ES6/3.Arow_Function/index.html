@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arow Function</title>
+</head>
+<body>
+   
+
+    <script>
+
+        // Function bình thường(decration Function)
+        function logger(log) {
+            console.log(log)
+        }
+        logger('NHìn cc')
+
+        // expresstion function
+        const logger2 = function(log2) {
+            console.log(log2)
+        }
+        logger2("Móc mắt chừ")
+
+        // Arow Function
+        const logger3 = (log3) => {
+            console.log(log3);
+        }
+
+        console.log('biến')
+
+
+        const sum = (a, b) => a + b // return 
+        console.log(sum(2, 2))
+
+        const sum2 = (a, b) => ({a: a, b: b});
+
+        const obj = {
+            name: 'Javascript basic!',
+            getName: function() {
+                return this.name; // đc gọi là  context // từ khóa this đc hỉu rằng là chính là thằng gọi đến phương thức getNAme
+            }
+        }
+        console.log(obj.getName());
+    </script>
+</body>
+
+
+</html>

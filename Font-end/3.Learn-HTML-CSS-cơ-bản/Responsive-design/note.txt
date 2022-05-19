@@ -1,0 +1,21 @@
+
+I. Set up
+1. Tham khảo nguồn:  w3school -> key "css @media rule",
+
+
+II. Giải quyết Vấn đề khi sử dụng media với trình duyệt cũ:
+1. Tham khảo nguồn : caniuse.com -> media query
+2. Polyfill : giúp ta sử dụng đc media query cho những trình duyệt cũ
+--> search key "respond.js polyfill cnd" --> https://github.com/scottjehl/Respond or https://cdnjs.com/libraries/respond.js
+--> link file js vào
+--> nhưng có 1 điều là trình duyệt cũ sử dụng đc nhưng những trình duyệt mới thì nó sẽ không cần
+--> cho nên ta vào search key "html conditional comment"
+
+
+II. 5.Preakpoint
+1. Tham khảo nguồn: media query common breakpoint (https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints/)
+---> có đủ loại Preakpoint(điểm)
+
+
+III.
+1. Search key "convert px to em" để đổi đơn vị

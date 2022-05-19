@@ -1,0 +1,189 @@
+/* HOME PAGE */
+.all-home-page {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+/* header home page */
+.header-home-page {
+    width: 85%;
+    align-items: center;
+}
+.box-list-product-header-home {
+    display: flex;
+}
+.box-carosel-header-home {
+    flex: 3;
+}
+.carosel-main-header-home {
+    background-image: url("https://smartfashion.ai/wp-content/uploads/2020/11/phoi-do-voi-ao-form-rong-nam.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 424px;
+    margin-top: 30px;
+}
+.list-group-item-action {
+    width: 90%;
+    height: 45px;
+    background: #fff;
+    color: rgb(17, 17, 17);
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+    line-height: 30px;
+}
+.list-group-item-action:hover {
+    background-color: rgb(224, 168, 26);
+}
+.list-group {
+    flex: 1;
+}
+
+/*  */
+.input-seach-header-home {
+    width: 50%;
+    height: 50px;
+    outline: 0; /* bỏ đi viền của input */
+    border: 1px solid rgb(221, 223, 219);
+}
+.button-search-header-home {
+    height: 50px;
+    width: 17%;
+    color: #fff;
+    background-color: #7fad39;
+    border: none;
+}
+.ss {
+    display: none;
+    /* transition-duration: 4s;
+    transition-delay: 2s;
+    transition:  1s; */
+}
+
+/* / */
+
+.box-list-item-header-home {
+    display: flex;
+}
+.item-header-home1 {
+    height: 170px;
+    background-image: url("https://cf.shopee.vn/file/8dbe66d8aa9bbb96273fe98715bee5f8");
+    flex: 1;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.item-header-home2 {
+    height: 170px;
+    background-image: url("https://cf.shopee.vn/file/35bab12a21692743e95a8b6d4feda4cd_tn");
+    flex: 1;
+    margin-top: 30px;
+}
+
+.item-header-home3 {
+    height: 170px;
+    background-image: url("https://cbu01.alicdn.com/img/ibank/O1CN01Qyb7jC2FOyA7akblk_!!2208857268871-0-cib.jpg_720x720q75.jpg");
+    flex: 1;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/* BODY HOME */
+.body-home-page {
+    width: 83%;
+    margin-top: 40px;
+}
+
+.box-btn-card-body-home {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* // */
+.box-item-service {
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+}
+.box-item-service .item-service {
+    flex: 1;
+}
+
+.slider-main {
+    position: absolute; /* thằng con dựa vào thằng cha làm gốc tọa độ */
+    width: 200%;
+}
+.item {
+    width: 200px;
+    display: inline-block; /* gom lại thành 1 hàng - và giữ tính tính chất khối */
+    background: rgb(51, 155, 65);
+    position: relative;
+    height: 100px;
+    margin-left: 10px;
+    border: 2px dashed pink;
+}
+.text {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+}
+.btn-area {
+    position: absolute;
+    bottom: 40px;
+    left: 45%;
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .header-home-page {
+        width: 99%;
+    }
+
+    .list-group-item-action {
+        width: 100%;
+        height: auto;
+    }
+    .box-list-product-header-home {
+        flex-direction: column; /* xếp thành cột */
+    }
+    .box-list-item-header-home {
+        flex-direction: column;
+        height: 600px;
+    }
+    .item-header-home1 {
+        margin-right: 0;
+        height: 300px;
+        margin-top: 30px;
+    }
+    .item-header-home2 {
+        height: 200px;
+        margin-top: 10px;
+    }
+    .item-header-home3 {
+        height: 90px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .box-carosel-main-header-home {
+        display: none;
+    }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .header-home-page {
+        width: 99%;
+    }
+    .list-group-item-action {
+        font-size: 11px;
+        height: auto;
+    }
+}
+
+/* Cả Mobile & tablet: width < 1024px */
+@media only screen and (max-width: 63.9375em) {
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <ul>Pseudo elements (phần tử giả) (tạo ra để hiển thị ra các phần từ của mình mà ko cần phải viết html
+        mà chỉ cần viết css thôi )
+        <li>::before</li>
+        <li>::after</li>
+        <li>::first-letter (thằng đầu sẽ có thuộc tính)</li>
+        <li>::first-line (thằng cuối sẽ có thuộc tính)</li>
+        <li>::selection (thằng cuối sẽ có thuộc tính)</li>
+        <ul>
+            <p>----------------------------------------------------------------</p>
+
+            <!-- before - after -->
+            <!-- tạo 1 element giả trong cái box -->
+            <!-- content không thể thiếu trong element giả -->
+            <!-- display: block để nó có dang khối hộp -->
+            <!-- mỗi element giả gì tồn tại 1 before và after -->
+            <!-- khi trong thẻ div chính có nhiều thẻ con khác thì before sẽ tạo ra elemnet đứng ở đầu và after sẽ ngược lại -->
+
+            <style>
+                .box::before {
+                    content: "";
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    background-color: aqua;
+                }
+
+                .box::after {
+                    content: "xin chào";
+                    color: brown;
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgb(108, 226, 78);
+                }
+            </style>
+
+            <div style="width: 200px; height: 200px; background: blueviolet;" class="box"></div>
+
+
+            <!-- ::first-letter -->
+            <!-- nó sẽ css cho chữ đầu tiên trong thẻ -->
+            <style>
+                h1::first-letter{
+                    font-size: 70px;
+                    color: brown;
+                }
+            </style>
+
+            <h1>Học về CSS</h1>
+
+
+
+            <!-- ::first-line -->
+            <!-- nó sẽ css có dòng đầu tiên của thẻ -->
+            <style>
+                h2::first-line{
+                    font-size: 60px;
+                    color: burlywood;
+                }
+            </style>
+
+            <h2>Dòng thứ nhất <br/> Dòng thứ hai</h2>
+            
+
+            <!-- ::selector -->
+            <!-- khi mà người dùng bôi vào 1 đoạn chữ trên page mặc định màu boi là mà xanh và chúng ta có thể đổi màu đó --> 
+
+            <style>
+                h3::selection{
+                    background-color: chartreuse;
+                    color: darkgray;
+                }
+            </style>
+
+            <h3>Hello Trường nha!</h3>
+
+
+
+</body>
+
+</html>

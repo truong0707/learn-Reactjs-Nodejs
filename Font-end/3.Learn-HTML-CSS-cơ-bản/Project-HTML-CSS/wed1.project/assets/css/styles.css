@@ -1,0 +1,161 @@
+/* Reset CSS */
+* {
+    /* kiểu Emmet */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* alt + shift + -> */
+/* alt + shift + bôi đen */
+
+/* 
+Chú ý:
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng(kiểu chữ , hình dáng, ..)
+
+
+- display : là thuộc tính liên qun đến hiển thị
+- Tính chất display: block nó kế thừa chiều ngang của thẻ chứa nó
+*/
+
+/* 
+1. Làm từ ngoài vào trong
+2. Làm từ trên xuống dưới
+3. Làm từ tổng quan đến chi tiết
+*/
+#main {
+}
+
+/* chỉnh kiểu cho cả page */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0; /* mặc định phía tren top = 0 */
+    left: 0; /* mặc định phía left bằng ko = 0 */
+    right: 0; /* mặc định phía right bằng ko = 0, lắp đầy khoản trống */
+    z-index: 1;
+}
+
+#nav .subnav li {
+    width: 100%;
+}
+
+#nav li {
+    display: inline-block; /* gom lại thành 1 hàng và block là giữ lại tính chất khối */
+    position: relative;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none; /* bỏ mặc định là gạch chân đi */
+    line-height: 46px; /* canh giữa chiều cao của chữ */
+    padding: 0 24px; /* khoảng cách (trên dưới bằng 0) (trái/phải là 24px) */
+    display: block;
+}
+
+/* #nav li:hover a{
+    color: #000;
+    background-color: #ccc;
+} */
+
+/* chỉ ảnh hưởng đến câp 1 */
+#nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none; /* ẩn thanh đi */
+    min-width: 160px; /* chiều rộng tối thiểu */
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a {
+    color: #000;
+}
+
+#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+/* thêm thuộc tính vào thẻ a cấp 1 */
+#nav > li > a {
+    text-transform: uppercase; /* chũ in hoa */
+}
+
+#nav .subnav a {
+    padding: 0 16px; /* khoảng cách trên dưới bằng 0 trái/phải là 16 */
+    line-height: 38px; /* chiều cao của chữ */
+}
+
+/* hiên thanh lên */
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav {
+    display: inline-block;
+}
+
+.search-btn {
+    line-height: 46px;
+    padding: 0 21px;
+}
+.search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer; /* thay đổi con chuột thành bàn tay */
+}
+
+/* /////////////////////////////////////////////////////// */
+
+#slider {
+    margin-top: 46px; /* để thằng slider nằm sát mép của header */
+    padding-top: 50%; /* khi đặt giá trị pixel thì ko bàn,
+ nhưng khi đặt giá trị là % thì nó sẽ là kích thước tỉ lệ theo chiều ngang của chính nó */
+    background-image: url("https://www.w3schools.com/w3images/la.jpg"); 
+    background-position: top;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    /* text-align: center; */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500px;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+
+#content {
+}
+#footer {
+}

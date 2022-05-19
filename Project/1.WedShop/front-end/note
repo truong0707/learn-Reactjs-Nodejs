@@ -1,0 +1,55 @@
+Những ứng dụng trong kiến thức này:
+
+Đối với Css:
+1. Flex box:
+2. Position:
+3. Responsive: 
+4. borderEndStartRadius
+
+
+Đối với javascript:
+1. Sử dụng slice(a,b)
+2.
+
+
+Đối với FrameWord ReactJS:
+1. Ứng dụng được props trong components
+2. Sử dụng Axios để call Api
+3. Ứng dụng Hook để làm Load more
+
+
+
+
+Đối với thư viện:
+1. thư viện swiper : https://swiperjs.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GHI  Nhớ :
+2. Position:
++ Relative: vị trí tương đối -> nó sẽ lấy chính vị trí mà nó đứng lúc hiện tại để nó làm gốc tọa độ
++ Absolute: vị trí tuyệt đối -> nó bị phụ thuộc vào thẻ cha gần nhất có thuộc tính Position để lấy 
+thẻ cha đó làm gốc tọa độ.
+* Để chỉnh vị trí ta dùng:( 
+    top: 0;
+    right: 0
+    botton: 0
+    right: 0
+)

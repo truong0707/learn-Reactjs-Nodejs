@@ -1,0 +1,37 @@
+/* 3 breakpoints */
+
+.box {
+    display: flex;
+    height: 100vh;
+    background: bisque;
+}
+.mobile, 
+.tablet, 
+.pc {
+    margin: auto;
+    display: none; /* ẩn */
+} 
+
+
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+    .mobile {
+        display: block;
+    }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 7024px){ 
+    .tablet {
+        display: block;
+    }
+}
+
+/* PC: width >= 1024px */
+@media only screen and (min-with: 1024px) {
+    .pc {
+        display: block;
+    }
+    
+}

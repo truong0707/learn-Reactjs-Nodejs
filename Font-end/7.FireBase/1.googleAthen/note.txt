@@ -1,0 +1,2 @@
+1. Set up fire base
+2. Cài thư viện firebase để sử dụng: npm i firebase

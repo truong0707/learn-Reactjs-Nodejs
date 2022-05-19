@@ -1,0 +1,118 @@
+/* Nav */
+.toolbar__navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem; /* khoản cách trái phải */
+}
+.toolbar {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+    left: 0;
+    top: 0;
+    z-index: 3; /* cấp đồ đè lên nhau */
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1);
+}
+.toolbar__logo {
+    color: #009e7f;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.toolbar__navigation-items ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.toolbar__navigation-items ul li {
+    line-height: 50px;
+    width: 85px;
+    text-align: center;
+}
+.toolbar__navigation-items ul li:hover {
+    background: #009e7f;
+}
+.toolbar__navigation-items li .item__bar:hover {
+    color: #fff;
+    background: #009e7f;
+}
+.toolbar__navigation-items li {
+    padding: 0 0.5rem;
+}
+.toolbar__navigation-items ul .item__bar {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+/* .toolbar__navigation-items ul .item__bar:hover {
+    color: red;
+
+} */
+.spacer {
+    flex: 1;
+}
+
+/* icon hiển thị thanh kẹp */
+.icon-drawer {
+    font-size: 20px;
+    color: #000;
+}
+
+
+.toolbar__navigation-user-store ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* phần nav login */
+.toolbar__navigation-user-store ul li {
+    line-height: 50px;
+    width: 65px;
+    text-align: center;
+}
+.toolbar__navigation-user-store li {
+    padding: 0 0.5rem;
+}
+
+.toolbar__navigation-user-store ul .item__bar {
+    color: #009e7f;
+    text-decoration: none;
+}
+.toolbar__navigation-user-store ul .item__bar:hover {
+    color: coral;
+
+}
+.faBar {
+    display: none;
+}
+
+@media only screen and (max-width: 53.9375em) {
+    .faBar {
+        display: block;
+    }
+    .toolbar__navigation-items {
+        display: none;
+    }
+}
+.item__count {
+    position: fixed;
+    top: 1px;
+    right: 85px;
+    color: rgb(7, 170, 80);
+    width: 19px;
+    text-align: center;
+    height: 17px;
+    background-color: rgb(236, 230, 147);
+    border-radius: 45%;    
+}
+.item__count span {
+    position: absolute;
+    top: -16px;
+    right: 5px;
+    font-size: 14px;
+}

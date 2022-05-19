@@ -1,0 +1,162 @@
+1. git init (tạo local git repo trên máy, làm 1 lần thôi)
+
+
+
+
+2. Xem trạng thái của cá file:
+git status 
+
+
+<  Thư mục đang làm việc       Staging Area               Commited    >
+
+chú thích:
+(Staging Area: là 1 khu vực để có thể theo dõi ~ cái file mà nó sẽ đc thực hiện ở những lần commit tiếp theo)
+
+
+3. Thêm file cần cho vào
+-git add "tên file/folder/. cần add"
+  Thêm tất cả
+-git add.
+   Đưa trở lại:
+-git restore --staged "tên file"
+
+vd: git add index.html 
+( nó sẽ đưa file từ thư mục đang làm việc sang Staging Area)
+
+
+4. git commit -m "tên của lượt commit những thay đổi"
+vd:git commit -m "them index.html file"
+vd:git commit -m "updated file index.html"
+(khi chúng ta tiến hành commit thì ~ cái file ở Staging Area này sẽ đc đưa vào trong git repo với nội dung là những sự thay đổi trong những cái file đó)
+(file sẽ được duy chuyên từ Staging Area sang trạng thái đã Commited)
+
+
+5.Xem lại commit mà chúng ta đã tạo:
+git log
+Thoát khỏi chết độ git log chúng ta ấn q
+
+
+
+
+
+// Đưa git repo dưới local này lên sever(với những người làm chung dự án )
+1. Tạo repo sever
+
+2. kêt nối giữa 2 repo
+(ở đoạn 2)
+Lênh: git remote add origin https://github.com/truong0707/AppWedDiDong
+
+// vào nhánh main
+-Lệnh: git branch -M main
+
+-Xem nhánh đang có git branch của main
+
+-tạo brach trên main: 
+
+ Đẩy lên
+-Lệnh: git push -u origin main
+(Đây là câu lệnh mà nó sẽ đẩy 3 cái commit mà chúng ta đã tạo lúc nãy lên trên remote)
+
+(Sau khi nhập xong, reload trang lại sẽ thấy code)
+(Phần này để đẩy lên main)
+
+
+
+-git push origin "tên nhánh branch" (đưa những thay đổi của local repo lên mạng) 
+-git pull (cập nhật những thay đổi từ trên mạng cloud repo về máy local repo)
+-git clone (sao chép git ở trên từ trên mạng cloud repo về máy local repo, làm 1 lần thôi)
+
+-git branch (xem các nhánh có trong local repo, dấu * hiển thị cho việc đang thực hiện thay đổi với branch đó)
+
+-git branch "tên nhánh mới" (tạo nhánh mới trong local repo)
+-git checkout -b "tên nhánh" (chuyển sang nhánh khác để thực hiện thay đổi với branch đó)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Sử dụng git Branch(nhánh): hay còn gọi là nhánh, nó giúp cho chúng ta có thể làm việc của riêng mình mà không ảnh hưởng đến công việc của người khác
+==== Khái niệm ====
+- branch: nhánh
+- commit: xác nhận chốt đưa những thay đổi vào trong git để lưu trữ
+- local repo: git ở trên máy tính "trong folder .git"
+- cloud repo: git ở trên mạng "trong cái trang https://github.com/tên_repo.git"
+- đã git clone thì không git init, đã git init thì không git clone
+- git pull sẽ thay thế toàn bộ code trong git local repo thành code ở trên git cloud repo
+- git push sẽ đưa toàn bộ code đã commit ở local repo lên cloud repo
+- git compare: so sánh code ở nhánh này với nhánh nọ để chuẩn bị hợp nhất
+- git merge: hợp nhất hai nhánh lại mới nhau (yêu cầu các local repo phải pull lại code trên cloud repo về)
+
+
+1. git branch: nó sẽ show cho chúng ta thấy tất cả các branch mà đang có.
+
+
+======== tạo branch =======
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+$ git branch luc
+
+$ git branch
+  luc
+* main
+
+$ git checkout luc
+Switched to branch 'luc'
+
+$ git branch
+* luc
+  main
+
+$ git status
+On branch luc
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   code.txt
+no changes added to commit (use "git add" and/or "git commit -a")
+0
+======= xong việc tạo nhánh ========
+
+======= code gì gì đó ========
+======= đưa những thay đổi ở nhánh vừa tạo lên git trên cloud repo ========
+
+$ git add .
+
+$ git commit -m "tao xong code quen mat khau"
+[luc aca9af2] tao xong code quen mat khau
+ 1 file changed, 1 insertion(+)
+
+
+
+lệnh đẩy branch
+
+$ git push origin luc
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 280 bytes | 280.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'luc' on GitHub by visiting:
+remote:      https://github.com/often127/git-test/pull/new/luc
+remote:
+To https://github.com/often127/git-test.git
+ * [new branch]      luc -> luc
+
+======= xong ========
+
+======= Lực sẽ đi kiểm tra và merge code của các bạn ========
+======= đề nghị các bạn không thay đổi gì ở code nữa sau khi đã push lên ========
+======= vì các bạn sẽ phải pull về và toàn bộ các thay đổi của bạn sẽ mất hết ========
+======= sau khi pull về các bạn lại tiếp tục tạo nhánh mới ========

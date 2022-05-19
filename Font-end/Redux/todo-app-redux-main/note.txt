@@ -1,0 +1,4 @@
+1. Cài redux: npm install redux
+2. Cài react-redux : để có thể sử dụng redux ở trong react
+3. Tạo Store và tạo file store
+4. Cài : npm install redux-devtools-extension để sử dụng tool

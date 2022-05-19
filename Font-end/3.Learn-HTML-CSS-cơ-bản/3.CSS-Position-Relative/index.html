@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    CSS Position: Relative <br />
+    (nghĩ đơn giản là giao diện đè) <br />
+    (ví dụ khi ta vào trang facebook, khi bấm vào thanh chức năng thông báo thì nó sẽ hiện 1 thanh nhỏ ra màn hình đè
+    lên page) <br />
+    (tóm lại nó có công dụng thiết lập các vị trí hiển thị element lên wedsite)
+
+
+    <h3>Có các thuộc tính của Position như sau:</h3>
+    <li>Realative(vị trí tương đối)</li>
+    <li>Absolute (vị trí tuyệt đối)</li>
+    <li>Fixed (vị trí phụ thuộc vào khung trình duyệt)</li>
+    <li>Fixed (vị trí bám dính, nó sẽ phụ thuộc với khung trình duyện , và thuộc tính này ko đc khuyến cáo sử dụng)</li>
+
+    <p>---------------------------------------------------</p>
+
+
+    <!-- Realative(vị trí tương đối) -->
+    <!-- vị trí tương đối có nghĩa là nó sẽ ko bị phụ thuộc vào đối tượng nào khác cả , nó sẽ lấy vị trí của đó đang đứng làm gốc tọa độ -->
+    <!-- và ta sẽ có thể di chuyển nó và nó sẽ đè lên layout -->
+    <!-- di chuyển chữ nằm trên box -->
+    <!-- lưu ý các thuộc tính như top , left , right , bottonm nó hoạt động khi có position -->
+    <style>
+        h1 {
+            position: relative;
+            top: 50px;
+
+        }
+
+
+        .box {
+            width: 50px;
+            height: 50px;
+            background: blueviolet;
+        }
+    </style>
+
+    <h1>realative</h1>
+
+    <div class="box"></div>
+
+
+
+    <!-- Absolute(vị trí tuyêt đối) nó sẽ phụ thuộc vào thẻ cha gần nhất có thuộc tính position -->
+    <!-- giả sử khi chúng ta vào trang facebook khi chúng ta nhấp vào quả chuông thì nó hiện ra thanh thông báo, và ta nói rằng
+    quả chuông là thẻ cha và thanh thông báo là thẻ con. -->
+
+    <style>
+        .father{
+            width: 100%;
+            height: 120px;
+            background: #333;
+            position: relative;
+        }
+
+        .child{
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            right: 50px;
+            bottom: 50px;
+        }
+    </style>
+
+    <div class="father">
+        <div class="child"></div>
+    </div>
+
+
+
+
+    <!-- Fixed (vị trí phụ thuộc vào khung trình duyệt) -->
+    <!-- giả sử khi ta vào trang f8 khi ta lướt trang thì các navbar vẫn giữ nguyên ko bị cuộn theo và để làm đc này thì position = fixed -->
+    <!--  một đối tượng phụ thuộc vào 1 đối tượng khác thì dùng position = absolute, còn khi đối tương đó phụ thuộc vào cửa sổ trình duyệt thì positon = fixed   -->
+
+    <!-- thêm positon = fixed vào header nó sẽ đứng lại khi lướt trang  -->
+    <style>
+        .header {
+            width: 100px;
+            height: 42px;
+            background: chartreuse;
+            position: fixed;
+        }
+    </style>
+
+
+    <div class="header"></div>
+    <div style="height: 1000px; background: burlywood" class="body"></div>
+
+
+
+
+
+    <!-- Sticky tự tìm hiểu -->
+    <!-- Vào trang Caniuse.com để xem tất cả -->
+</body>
+
+</html>
+
+<!-- 32 -->

@@ -1,0 +1,39 @@
+.CartDrawer {
+    width: 370px;
+    min-height: 400px;
+    position: fixed;
+    z-index: 3;
+    top: 37px;
+    right: 100px;
+    background-color: rgb(253, 255, 255);
+    border: 2px solid rgb(218, 215, 215);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+.cart__item {
+    width: 100%;
+    margin-top: 2px;
+    height: 100px;
+}
+.btn-delete-item {
+    border: none;
+    border-radius: 3px;
+}
+.btn-seeMore-cart{
+    position: absolute;
+    bottom: 7px;
+    right: 9px;
+    width: 110px;
+    height: 31px;
+    background: #009e7f;
+    text-align: center;
+}
+.btn-seeMore-cart {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 30px;
+}
+.btn-seeMore-cart:hover {
+    background: #10b392;
+    color: #fff;
+}
